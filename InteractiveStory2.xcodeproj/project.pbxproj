@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13969B101F0AB1E800F29559 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13969B0F1F0AB1E800F29559 /* PageController.swift */; };
 		13BC80AE1F0A857A00AF60C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC80AD1F0A857A00AF60C7 /* AppDelegate.swift */; };
 		13BC80B01F0A857A00AF60C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BC80AF1F0A857A00AF60C7 /* ViewController.swift */; };
 		13BC80B31F0A857A00AF60C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC80B11F0A857A00AF60C7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13969B0F1F0AB1E800F29559 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		13BC80AA1F0A857A00AF60C7 /* InteractiveStory2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveStory2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BC80AD1F0A857A00AF60C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13BC80AF1F0A857A00AF60C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				13BC80AD1F0A857A00AF60C7 /* AppDelegate.swift */,
 				13BC80AF1F0A857A00AF60C7 /* ViewController.swift */,
 				13BC80C11F0A953900AF60C7 /* InteractiveStory.swift */,
+				13969B0F1F0AB1E800F29559 /* PageController.swift */,
 				13BC80B11F0A857A00AF60C7 /* Main.storyboard */,
 				13BC80B41F0A857A00AF60C7 /* Assets.xcassets */,
 				13BC80B61F0A857A00AF60C7 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13969B101F0AB1E800F29559 /* PageController.swift in Sources */,
 				13BC80C21F0A953900AF60C7 /* InteractiveStory.swift in Sources */,
 				13BC80B01F0A857A00AF60C7 /* ViewController.swift in Sources */,
 				13BC80AE1F0A857A00AF60C7 /* AppDelegate.swift in Sources */,
@@ -299,6 +303,7 @@
 				13BC80BE1F0A857A00AF60C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

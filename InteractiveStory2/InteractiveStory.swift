@@ -27,7 +27,7 @@ enum Story: String {
 // adding computed properties to enum through extension is a common choice....
 extension Story {
     var artwork: UIImage {
-        return UIImage(named: self.rawValue)!
+        return UIImage(named: self.rawValue)! //UIImage init method is failable; forced! unwrapping considered ok since data are hard-coded assets....
     }
     
     var text: String {
@@ -58,7 +58,10 @@ extension Story {
 class Page {
     let story: Story
     
-    //  create custom type "Choice" as tuple.....
+    //  create custom type "Choice" as tuple.....in Page scope....
+    /*____________________________________________________________________
+     UnderTheHood: in Swift a "tuple" type is a struct without a name.....
+     --------------------------------------------------------------------*/
     typealias Choice = (title: String, page: Page)
     
     var firstChoice: Choice?
@@ -90,6 +93,7 @@ extension Page {
     }
 }
 
+// Data-Structure: Tree of Page types....
 struct Adventure {
     static var trip: Page {
         let returnTrip = Page(story: .ReturnTrip)
