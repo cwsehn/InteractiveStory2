@@ -46,6 +46,21 @@ extension Story {
         return UIImage(named: self.rawValue)! //UIImage init method is failable; forced! unwrapping considered ok since data are hard-coded assets....
     }
     
+    var soundEffectURL: NSURL {
+        let fileName: String
+        
+        switch self {
+        case .Droid, .Home: fileName = "HappyEnding"
+        case .Monster: fileName = "Ominous"
+        default: fileName = "PageTurn"
+        }
+        
+        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "wav")!
+        
+        return NSURL(fileURLWithPath: path)
+        
+    }
+    
     var text: String {
         switch self {
         case .ReturnTrip(let name):
