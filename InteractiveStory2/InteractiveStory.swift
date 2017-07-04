@@ -82,7 +82,7 @@ extension Page {
     func addChoice(title: String, page: Page) -> Page {
         /*__________________________________________________________________________
           UnderTheHood: optional values are enums with case values ".Some and .None"
-         --also note the switch statement on multiple values.....
+         --also note the switch statement on multiple values ...via tuple...
         ---------------------------------------------------------------------------*/
         switch (firstChoice, secondChoice) {
         case (.Some, .Some): break

@@ -12,6 +12,7 @@ class PageController: UIViewController {
     
     var page: Page?
     
+    // SubViews created "programmatically" rather than as UIOutlets from storyboard....
     let artwork = UIImageView()
     let storyLabel = UILabel()
     let firstChoiceButton = UIButton(type: .System)
@@ -124,9 +125,6 @@ class PageController: UIViewController {
     }
 
 }
-
-
-
 
 
 
